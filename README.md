@@ -89,13 +89,13 @@ En GitHub presiona **Fork** para crear una copia del repositorio en tu cuenta.
 ## 2️. Clonar tu fork
 
 ```bash
-git clone https://github.com/TU-USUARIO/DIU2026-2
+git clone https://github.com/TU-USUARIO/DIU2027-1
 ````
 
 Entrar al repositorio:
 
 ```bash
-cd DIU2026-2
+cd DIU2027-1
 ```
 
 ---
