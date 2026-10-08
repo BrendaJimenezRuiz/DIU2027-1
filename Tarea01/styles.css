@@ -77,3 +77,80 @@ nav ul {
   transform: translateY(-3px) scale(1.03);
   background-color: #8bb3f7;
 }
+
+/* --- SECCIÓN HERO / BUSCADOR --- */
+.hero {
+  padding: 2.5rem 2rem 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  background-color: #FFF8F0;
+  border: 3px solid var(--color-texto);
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 6px 6px 0px var(--color-texto);
+}
+
+.hero-card h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.buscador {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.campo-grupo label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.buscador input,
+.buscador select {
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--color-texto);
+  border-radius: 999px;
+  font-family: var(--fuente);
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+/* --- BOTÓN PRINCIPAL (CON TRANSITION) --- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-boton);
+  color: var(--color-texto);
+  border: 2px solid var(--color-texto);
+  border-radius: 999px;
+  padding: 0.6rem 1.4rem;
+  font-family: var(--fuente);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 0px var(--color-texto);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 0px var(--color-texto);
+  background-color: #90b8ff;
+}
