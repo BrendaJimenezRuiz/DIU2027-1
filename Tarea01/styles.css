@@ -471,3 +471,99 @@ footer p {
 .radio-label:hover .icon-radio {
   transform: scale(1.1);
 }
+
+/* --- FOCO VISIBLE (teclado) --- */
+.buscador input:focus,
+.buscador select:focus,
+.formulario input[type="text"]:focus,
+.formulario input[type="date"]:focus,
+.formulario input[type="file"]:focus,
+.formulario textarea:focus {
+  box-shadow: 0 0 0 4px var(--color-boton);
+}
+
+.btn-primary:focus-visible,
+.nav-btn:focus-visible,
+.nav-search-btn:focus-visible,
+.radio-label input:focus-visible {
+  outline: 3px solid var(--color-texto);
+  outline-offset: 3px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  header.header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+  }
+
+  .hero-card {
+    padding: 1.5rem 1rem;
+    box-shadow: 4px 4px 0px var(--color-texto);
+  }
+
+  .buscador {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .campo-grupo {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .buscador input,
+  .buscador select,
+  .buscador .btn-primary {
+    width: 100%;
+  }
+
+  .buscador .btn-primary {
+    justify-content: center;
+  }
+
+  .objetos,
+  .reportar {
+    padding: 1.5rem 1rem;
+  }
+
+  .nota-container {
+    padding: 1.5rem 1rem;
+    box-shadow: 5px 5px 0px var(--color-texto);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container h1 {
+    font-size: 1.25rem;
+  }
+
+  .titulo-seccion {
+    font-size: 1.3rem;
+  }
+
+  .icon-titulo,
+  .icon-inline {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .nav-btn {
+    padding: 0.5rem 0.9rem;
+  }
+
+  .radio-options {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
