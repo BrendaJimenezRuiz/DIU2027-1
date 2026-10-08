@@ -130,7 +130,78 @@
       </div>
     </section>
 
+    <!-- Sección Formulario -->
+    <section class="reportar" id="reportar">
+      <div class="nota-container">
+        <h2 class="titulo-seccion">
+          <img src="imagenes/reporte.png" alt="" class="icon-inline"> Reportar un objeto perdido o encontrado
+        </h2>
+
+        <form class="formulario">
+
+          <div class="form-row">
+            <label for="nombre">Nombre del objeto:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Peluche Copito" required>
+          </div>
+
+          <fieldset class="form-fieldset">
+            <legend>Estado del objeto:</legend>
+            <div class="radio-options">
+              <label class="radio-label">
+                <input type="radio" name="estado" value="perdido" checked>
+                <img src="imagenes/corazonroto.png" alt="" class="icon-radio"> Perdido
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="estado" value="encontrado">
+                <img src="imagenes/lupa.png" alt="" class="icon-radio"> Encontrado
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="estado" value="recuperado">
+                <img src="imagenes/flor.png" alt="" class="icon-radio"> Recuperado
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="lugar">Lugar de extravío:</label>
+            <input type="text" id="lugar" name="lugar" placeholder="Ej. Biblioteca central">
+          </div>
+
+          <div class="form-row">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+          </div>
+
+          <div class="form-row">
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe los detalles del objeto..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="imagen">Imagen (archivo local):</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+          </div>
+
+          <div class="form-row">
+            <label for="contacto">Forma de contacto:</label>
+            <input type="text" id="contacto" name="contacto" placeholder="Tu correo o teléfono">
+          </div>
+
+          <button type="submit" class="btn-primary btn-submit">
+            <img src="imagenes/enviar.png" alt=""> Enviar reporte
+          </button>
+
+        </form>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="footer">
+    <p>🌸 Club de Objetos Perdidos 🌸</p>
+    <p>Hecho con ♡ por <strong>Brenda Jiménez Ruiz</strong></p>
+    <p>2026</p>
+  </footer>
 
 </body>
 </html>
