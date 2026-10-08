@@ -42,5 +42,39 @@
     </nav>
   </header>
 
+  <main id="inicio">
+
+    <!-- Sección Hero / Buscador -->
+    <section class="hero" id="buscar">
+      <div class="hero-card">
+        <h2>
+          <img src="imagenes/osodepeluche.png" alt="" class="icon-titulo">
+          ¿Perdiste o encontraste algo muy especial?
+        </h2>
+        <form class="buscador">
+          <div class="campo-grupo">
+            <label for="nombre-objeto">Nombre del objeto</label>
+            <input type="search" id="nombre-objeto" placeholder="Escribe el nombre del objeto...">
+          </div>
+
+          <div class="campo-grupo">
+            <label for="filtro-estado">Estado</label>
+            <select id="filtro-estado">
+              <option value="">Todos los estados</option>
+              <option value="perdido">Perdido</option>
+              <option value="encontrado">Encontrado</option>
+              <option value="recuperado">Recuperado</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            <img src="imagenes/lupa.png" alt=""> Buscar ✨
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>
