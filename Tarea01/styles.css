@@ -154,3 +154,106 @@ nav ul {
   box-shadow: 5px 5px 0px var(--color-texto);
   background-color: #90b8ff;
 }
+
+/* --- GALERÍA DE TARJETAS (POLAROID CON WASHI TAPE) --- */
+.objetos {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.lista-objetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 2.5rem;
+}
+
+.tarjeta.polaroid {
+  position: relative;
+  padding: 1.2rem;
+  background-color: var(--color-tarjeta);
+  border: 3px solid var(--color-texto);
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 0px rgba(74, 59, 50, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta.polaroid:hover {
+  transform: translateY(-6px) rotate(1deg);
+  box-shadow: 8px 8px 0px rgba(74, 59, 50, 0.4);
+}
+
+/* Cinta adhesiva (Washi Tape) */
+.tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 90px;
+  height: 22px;
+  background-color: rgba(255, 230, 109, 0.85);
+  border: 1px dashed rgba(74, 59, 50, 0.4);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.imagen-container {
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 2px solid var(--color-texto);
+  margin-bottom: 1rem;
+}
+
+.imagen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjeta h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* Badges de estado */
+.estado {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border: 2px solid var(--color-texto);
+  margin-bottom: 0.8rem;
+}
+
+.estado.perdido {
+  background-color: var(--color-perdido);
+}
+
+.estado.encontrado {
+  background-color: var(--color-encontrado);
+}
+
+.estado.recuperado {
+  background-color: var(--color-recuperado);
+}
+
+.detalle {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.descripcion {
+  font-size: 0.85rem;
+  color: #6a574b;
+  margin-top: 0.6rem;
+  font-style: italic;
+}
