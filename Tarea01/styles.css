@@ -365,3 +365,109 @@ footer p {
   margin: 0.3rem 0;
   font-size: 0.95rem;
 }
+
+/* Iconos dentro de estados y botones */
+.estado img,
+.btn-primary img {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Iconos grandes junto a los títulos */
+.icon-titulo,
+.icon-inline {
+  width: 3rem;
+  height: 3rem;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Icono pequeño de "Lugar" en las tarjetas */
+.icon-detalle {
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Flor del logo, con animación */
+.icon-decor {
+  width: 1.8rem;
+  height: 1.8rem;
+  vertical-align: middle;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+/* --- BARRA DE BÚSQUEDA EN EL HEADER --- */
+.nav-search-form {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 2px solid var(--color-texto);
+  border-radius: 999px;
+  padding: 0.2rem 0.3rem 0.2rem 0.8rem;
+  box-shadow: 2px 2px 0px var(--color-texto);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-search-form:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 0px var(--color-texto);
+}
+
+.nav-search-form input[type="search"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--fuente);
+  font-size: 0.85rem;
+  color: var(--color-texto);
+  width: 110px; /* Tamaño compacto para no saturar la barra de navegación */
+  transition: width 0.3s ease;
+}
+
+/* Al hacer clic en el input, la barra se expande ligeramente */
+.nav-search-form input[type="search"]:focus {
+  width: 150px;
+}
+
+.nav-search-btn {
+  background-color: var(--color-boton);
+  border: 1.5px solid var(--color-texto);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-search-btn:hover {
+  transform: scale(1.1);
+  background-color: #8bb3f7;
+}
+
+.nav-search-btn img {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+/* --- ICONOS EN LOS RADIO BUTTONS DEL FORMULARIO --- */
+/* Forzar tamaño y alineación de la imagen en el radio button */
+.icon-radio {
+  width: 1.3rem;
+  height: 1.3rem;
+  object-fit: contain;
+  vertical-align: middle;
+  transition: transform 0.2s ease; /* Pequeño efecto al pasar el mouse */
+}
+
+/* Efecto hover sobre la imagen al pasar el mouse por la etiqueta */
+.radio-label:hover .icon-radio {
+  transform: scale(1.1);
+}
